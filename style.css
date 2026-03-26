@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #020617;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Background glow */
+.bg::before, .bg::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  filter: blur(120px);
+}
+
+.bg::before {
+  background: #ff00cc;
+  left: -100px;
+}
+
+.bg::after {
+  background: #00cfff;
+  right: -100px;
+}
+
+/* Glass container */
+.container {
+  backdrop-filter: blur(25px);
+  background: rgba(255,255,255,0.05);
+  padding: 25px;
+  border-radius: 20px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(255,0,200,0.3);
+}
+
+/* Title */
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(45deg, #ff00cc, #00cfff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent ;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  margin: 10px 0;
+  background: rgba(255,255,255,0.1);
+  color: white;
+}
+
+/* Card */
+.card {
+  margin: 20px 0;
+  height: 140px;
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  background: rgba(255,255,255,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+
+  box-shadow:
+    0 0 20px #ff00cc,
+    0 0 40px #00cfff;
+
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Buttons */
+button {
+  margin: 6px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(45deg, #ff00cc, #00cfff);
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+/* Interests */
+.interests label {
+  margin: 5px;
+  font-size: 12px;
+}
+
+/* Message */
+#message {
+  margin-top: 10px;
+  font-size: 14px;
+  opacity: 0.9;
+}

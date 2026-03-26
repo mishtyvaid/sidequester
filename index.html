@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SideQuester</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Inter&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<div class="container">
+
+  <h1>SideQuester ⚔️</h1>
+
+  <input id="username" placeholder="Enter your name">
+
+  <div class="interests">
+    <label><input type="checkbox" value="social"> Social</label>
+    <label><input type="checkbox" value="fitness"> Fitness</label>
+    <label><input type="checkbox" value="learning"> Learning</label>
+  </div>
+
+  <button onclick="start()">Enter</button>
+
+  <div class="stats">
+    <div>🧪 <span id="elixer">0</span></div>
+    <div>🔥 <span id="streak">0</span></div>
+  </div>
+
+  <div class="card" id="card">🎴 Spin your fate</div>
+
+  <button onclick="spin()">🎰 Spin</button>
+  <button onclick="complete()">✅</button>
+  <button onclick="skip()">❌</button>
+
+  <p id="message"></p>
+
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
